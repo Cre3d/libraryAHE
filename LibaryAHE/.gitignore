@@ -1,0 +1,16 @@
+
+*.exe
+libaryahe/Debug/LibaryAHE.exe
+libaryahe/Debug/LibaryAHE.ilk
+libaryahe/Debug/LibaryAHE.pdb
+libaryahe/LibaryAHE/Debug/vc141.pdb
+libaryahe/LibaryAHE/Debug/vc141.idb
+libaryahe/LibaryAHE/Debug/book.obj
+libaryahe/LibaryAHE/Debug/LibaryAHE.pch
+libaryahe/LibaryAHE/Debug/LibaryAHE.tlog/CL.read.1.tlog
+libaryahe/LibaryAHE/Debug/LibaryAHE.tlog/CL.write.1.tlog
+libaryahe/LibaryAHE/Debug/library.obj
+libaryahe/LibaryAHE/Debug/main.obj
+libaryahe/LibaryAHE/Debug/stdafx.obj
+libaryahe/LibaryAHE/Debug/vc141.idb
+libaryahe/LibaryAHE/Debug/vc141.pdb
