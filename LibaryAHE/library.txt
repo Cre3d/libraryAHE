@@ -5,3 +5,38 @@ Astra Opel
 PWN
 56
 Opis jakis
+Mateusz Kupilas
+Junior Developer
+2017
+1
+Tarnowskie G¢ry
+171
+Wszystko co trzeba wiedziec by zaczac prace jako programista
+Tom Clancy
+Siege
+2012
+3
+Ubisoft
+653
+Ksiazka testowa.
+Mateusz Gruszkowski
+Gruszki na wierzbie
+1993
+1
+Gruszkowe Rewolucje
+543
+Testowa
+GitHub
+GitHub Desktop
+2016
+1
+Git
+2
+Git
+Test1
+Test2
+2000
+1
+Test
+43
+Test

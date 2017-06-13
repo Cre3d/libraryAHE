@@ -23,10 +23,10 @@ Book::Book(const Book &book)
 	description = book.description;
 }
 
-string Book::toString()
-{
-	return string(author+"\n"+title+"\n");
-}
+//string Book::toString()
+//{
+//	return string(author+" "+title+"\n");
+//}
 
 void Book::SetAuthor(string _author)
 {

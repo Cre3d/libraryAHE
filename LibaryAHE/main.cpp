@@ -22,10 +22,10 @@ void Menu(const Library &lib)
 	cout << "1. Wyswietl biblioteke" << endl;
 	cout << "2. Wyswietl szczegilowe informacje o ksiazce" << endl;
 	cout << "3. Dodaj ksiazke" << endl;
-	cout << "4. Usun ksiazke" << endl;
-	cout << "5. Wypozycz ksiazke" << endl;
-	cout << "6. Zwroc ksiazke" << endl;
-	cout << "8. Zapis biblioteki" << endl;
+	//cout << "4. Usun ksiazke" << endl;
+	//cout << "5. Wypozycz ksiazke" << endl;
+	//cout << "6. Zwroc ksiazke" << endl;
+	//cout << "8. Zapis biblioteki" << endl;
 	cout << "9. Wczytaj biblioteke" << endl;
 	cout << "--------------------------------------------" << endl;
 	cout << "0. Koniec" << endl << endl;
@@ -37,8 +37,8 @@ int main()
 {
 	Library lib;
 	
-	lib.AddBook(Book("KowalskiJan", "CzerwonyKapturek", 1999, 4, "Ziutek Books", 150, ""));
-	lib.AddBook(Book("NowakJan", "JasMalgosia", 1999, 11, "Ziutek Books", 234, "Bardzo ciekawa bajka"));
+	//lib.AddBook(Book("kowalskijan", "czerwonykapturek", 1999, 4, "ziutek books", 150, ""));
+	//lib.AddBook(Book("nowakjan", "jasmalgosia", 1999, 11, "ziutek books", 234, "bardzo ciekawa bajka"));
 
 
 	//	lib.Display();
@@ -118,41 +118,41 @@ int main()
 			// Save to file
 			fstream plik;
 			plik.open("library.txt", ios::out | ios::app);
-			plik << author << endl;
-			plik << title << endl;
-			plik << year << endl;
-			plik << edition << endl;
-			plik << publisher << endl;
-			plik << pages << endl;
-			plik << description << endl;
+				plik << author << endl;
+				plik << title << endl;
+				plik << year << endl;
+				plik << edition << endl;
+				plik << publisher << endl;
+				plik << pages << endl;
+				plik << description << endl;
 
 			plik.close();
 
 			// Add to vector
 			 lib.AddBook(Book(author,title,year,edition,publisher,pages,description));
-			//lib.AddBook(Book(author, title, year, 1, "PWN", 100, "Opis"));
+			//lib.AddBook(Book(author,title,year,edition,publisher,pages,description));
 		}
 		break;
-		case '4': // Usun ksiazke
-		{
-			
-		}
-		break;
-		case '5': // Wypozycz ksiazke
-		{
+		//case '4': // usun ksiazke
+		//{
+		//	
+		//}
+		//break;
+		//case '5': // wypozycz ksiazke
+		//{
 
-		}
-		break;
-		case '6': // Zwroc ksiazke
-		{
+		//}
+		//break;
+		//case '6': // zwroc ksiazke
+		//{
 
-		}
-		break;
-		case '8': // Zapis bazy
-		{
-			lib.save();
-		}
-		break;
+		//}
+		//break;
+		//case '8': // Zapis bazy
+		//{
+		//	lib.save();
+		//}
+		//break;
 		case '9': // Wczytanie bazy
 		{
 			lib.load();

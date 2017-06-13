@@ -15,13 +15,13 @@ void Library::Display() const
 		books[i].DisplayShort();
 	}
 }
-void Library::save() {
-	ofstream plik("library.txt");
-	for (vector<Book>::iterator i = books.begin(); i < books.end(); i++)
-		plik << i->toString();
-	plik.close();
-
-}
+//void Library::save() {
+//	ofstream plik("library.txt");
+//	for (vector<Book>::iterator i = books.begin(); i < books.end(); i++)
+//		plik << i->toString();
+//	plik.close();
+//
+//}
 
 //void Library::load()  {
 //	ifstream plik("library.txt");
@@ -42,9 +42,10 @@ void Library::load() {
 	}
 	string line;
 	int number_line = 1;
+	string author; string title; unsigned int year = 0; unsigned int edition = 0; string publisher; unsigned int pages = 0; string description;
 	while (getline(plik, line)) {
 
-			string author; string title; unsigned int year; unsigned int edition; string publisher; unsigned int pages; string description;
+		
 			switch (number_line) {
 				case 1: author = line; break;
 				case 2: title = line; break;

@@ -18,7 +18,8 @@ class Book
 public:
 	Book(string _author, string _title, unsigned int _year, unsigned int _edition, string _publisher, unsigned int _pages, string _description);
 	Book(const Book &book);
-	string toString();
+
+	//string toString();
 
 	void SetAuthor(string _author);
 	string GetAuthor() const;
