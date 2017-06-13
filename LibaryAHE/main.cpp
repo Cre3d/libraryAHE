@@ -36,9 +36,10 @@ void Menu(const Library &lib)
 int main()
 {
 	Library lib;
-
+	
 	lib.AddBook(Book("KowalskiJan", "CzerwonyKapturek", 1999, 4, "Ziutek Books", 150, ""));
 	lib.AddBook(Book("NowakJan", "JasMalgosia", 1999, 11, "Ziutek Books", 234, "Bardzo ciekawa bajka"));
+
 
 	//	lib.Display();
 	//	
@@ -114,6 +115,20 @@ int main()
 			cin.getline(description, 1000);
 			
 
+			// Save to file
+			fstream plik;
+			plik.open("library.txt", ios::out | ios::app);
+			plik << author << endl;
+			plik << title << endl;
+			plik << year << endl;
+			plik << edition << endl;
+			plik << publisher << endl;
+			plik << pages << endl;
+			plik << description << endl;
+
+			plik.close();
+
+			// Add to vector
 			 lib.AddBook(Book(author,title,year,edition,publisher,pages,description));
 			//lib.AddBook(Book(author, title, year, 1, "PWN", 100, "Opis"));
 		}

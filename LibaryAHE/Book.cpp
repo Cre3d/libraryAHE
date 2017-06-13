@@ -25,7 +25,7 @@ Book::Book(const Book &book)
 
 string Book::toString()
 {
-	return string(author+" "+title+"\n");
+	return string(author+"\n"+title+"\n");
 }
 
 void Book::SetAuthor(string _author)
