@@ -45,7 +45,6 @@ void Library::load() {
 	string author; string title; unsigned int year = 0; unsigned int edition = 0; string publisher; unsigned int pages = 0; string description;
 	while (getline(plik, line)) {
 
-		
 			switch (number_line) {
 				case 1: author = line; break;
 				case 2: title = line; break;
@@ -53,10 +52,8 @@ void Library::load() {
 				case 4: edition = atoi(line.c_str()); break;
 				case 5: publisher = line; break;
 				case 6: pages = atoi(line.c_str()); break;
-				case 7: description = line; break;
-					
-			}
-			if (number_line == 7) { 
+				case 7: description = line; break;			
+			} if (number_line == 7) { 
 				
 				Book tmp(author, title, year, edition, publisher, pages, description);
 				books.push_back(tmp);

@@ -17,7 +17,7 @@ public:
 
 	size_t GetSize() const;
 
-	void save();
+	//void save();
 
 	void load();
 };
